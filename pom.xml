@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>bpmn-js</artifactId>
-  <version>0.7.0</version>
+  <version>0.8.0</version>
   <name>bpmn-js</name>
   <description>A webjar for bpmn-js</description>
   <url>http://bpmn.io</url>
@@ -22,8 +22,10 @@
     <upstream.archiveName>bower-bpmn-js-${project.version}</upstream.archiveName>
     <upstream.baseUrl>https://github.com/bpmn-io/bower-bpmn-js</upstream.baseUrl>
     <upstream.archiveUrl>${upstream.baseUrl}/archive/${upstream.tag}.tar.gz</upstream.archiveUrl>
+
+    <webjar.minor.version>0</webjar.minor.version>
     <webjar.base>${project.build.outputDirectory}/META-INF/resources/webjars</webjar.base>
-    <webjar.dest>${webjar.base}/${project.artifactId}/${project.version}</webjar.dest>
+    <webjar.dest>${webjar.base}/${project.artifactId}/${project.version}-${webjar.minor.version}</webjar.dest>    
   </properties>
 
   <developers>
@@ -107,7 +109,7 @@
 
                 <echo message="moving resources" />
                 <copy todir="${webjar.dest}">
-                  <fileset dir="${project.build.directory}/${upstream.tag}/${upstream.archiveName}" />
+                  <fileset dir="${project.build.directory}/${upstream.tag}/${upstream.archiveName}/dist" />
                 </copy>
               </target>
 
