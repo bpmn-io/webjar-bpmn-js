@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>bpmn-js</artifactId>
-  <version>0.8.0</version>
+  <version>0.9.1</version>
   <name>bpmn-js</name>
   <description>A webjar for bpmn-js</description>
   <url>http://bpmn.io</url>
@@ -25,7 +25,7 @@
 
     <webjar.minor.version>0</webjar.minor.version>
     <webjar.base>${project.build.outputDirectory}/META-INF/resources/webjars</webjar.base>
-    <webjar.dest>${webjar.base}/${project.artifactId}/${project.version}-${webjar.minor.version}</webjar.dest>    
+    <webjar.dest>${webjar.base}/${project.artifactId}/${project.version}-${webjar.minor.version}</webjar.dest>
   </properties>
 
   <developers>

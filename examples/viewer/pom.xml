@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	
+
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.countandcare</groupId>
@@ -10,7 +10,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        
+
         <jsf.version>2.2.9</jsf.version>
 		<jsf.api.version>2.2.9</jsf.api.version>
     </properties>
@@ -44,7 +44,7 @@
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>bpmn-js</artifactId>
-            <version>0.8.0</version>
+            <version>0.9.1</version>
         </dependency>
     </dependencies>
 
