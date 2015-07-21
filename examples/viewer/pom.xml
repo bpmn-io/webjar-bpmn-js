@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.countandcare</groupId>
-    <artifactId>webjar-bpmn-js-modeler-jsfsample</artifactId>
+    <artifactId>webjar-bpmn-js-viewer-jsfsample</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
 
@@ -44,7 +44,7 @@
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>bpmn-js</artifactId>
-            <version>0.10.2</version>
+            <version>0.10.3</version>
         </dependency>
     </dependencies>
 
@@ -56,6 +56,15 @@
                 <artifactId>jetty-maven-plugin</artifactId>
                 <version>7.6.14.v20131031</version>
             </plugin>
+            <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.7</source>
+					<target>1.7</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
         </plugins>
     </build>
 </project>
