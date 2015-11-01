@@ -11,7 +11,7 @@
   <packaging>jar</packaging>
   <groupId>org.webjars</groupId>
   <artifactId>bpmn-js</artifactId>
-  <version>0.10.2</version>
+  <version>0.12.0</version>
   <name>bpmn-js-webjar</name>
   <description>A webjar for bpmn-js</description>
   <url>http://bpmn.io</url>
